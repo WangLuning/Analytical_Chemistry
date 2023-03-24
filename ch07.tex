@@ -1,0 +1,317 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{CJK}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{Analytical chemistry (5th Edition)}
+\author{LuMg}
+\date{March 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter 7}
+1.\begin{equation}
+    \begin{multlined}
+    \delta_{Zn^{2+}} = \frac{1}{1 + \beta_{1, NH_3}*\left[NH_3\right] + \beta_{2, NH_3}*\left[NH_3\right]^2 + \beta_{3, NH_3}*\left[NH_3\right]^3 + \beta_{4, NH_3}*\left[NH_3\right]^4} = 3.23*10^{-6}\\
+    E^{\phi}_{Zn(NH_3)_4^{2+}/Zn} = E^{\phi}_{Zn^{2+}/Zn} + \frac{0.059}{2}lgc_{Zn^{2+}}\\
+    = -0.763 + \frac{0.059}{2}*lg(3.23*10^{-6}*c_{Zn(NH_3)_4^{2+}}) = -1.04V\\
+    \end{multlined}
+\end{equation}
+2.\begin{equation}
+    \begin{multlined}
+        E_{Fe^{3+}/Fe^{2+}} = E^{\phi}_{Fe^{3+}/Fe^{2+}} + 0.059*lg\frac{[Fe^{3+}]}{Fe^{2+}}\\
+        = E^{\phi}_{Fe^{3+}/Fe^{2+}} + 0.059*lg\frac{\frac{[FeR_3^{3+}]}{K_3*[R]^3}}{\frac{[FeR_3^{2+}]}{K_2*[R]^3}}\\
+        = E^{\phi}_{Fe^{3+}/Fe^{2+}} + 0.059*lg\frac{K_2}{K_3}\\
+        = 0.771 + 0.059lg2.8*10^6 = 1.15 V\\
+    \end{multlined}
+\end{equation}
+3.\begin{equation}
+    \begin{multlined}
+        E^{\phi}_{Hg_2Cl_2/Hg} + \frac{0.059}{2}lg\frac{1}{[Cl^-]^2} = E^{\phi}_{Hg_2^{2+}/Hg} + \frac{0.059}{2}lg\frac{K_{sp}}{[Cl^-]^2}
+        E^{\phi}_{Hg_2Cl_2/Hg} = E^{\phi}_{Hg_2^{2+}} + \frac{0.059}{2}lgK_sp\\
+        = 0.265 V\\
+        E_{Hg_2Cl_2/Hg} = E^{\phi}_{Hg_2Cl_2/Hg} + \frac{0.059}{2}*lg\frac{1}{[Cl^-]^2} = 0.265 + \frac{0.059}{2}*lg(0.01)^2 = 0.383 V\\
+    \end{multlined}
+\end{equation}
+4.\begin{equation}
+    \begin{multlined}
+        [OH^-] = 1*10^{-4} mol/L\\
+        [NH_3] = \frac{[OH^-]}{[OH^-]+K_b}*c_{NH_3} = \frac{10^{-4}}{10^{-4} + 10^{-4.74}}* 0.1 = 0.085 mol/L\\
+        \delta_{Ag^+} = \frac{1}{1 + \beta_1*[NH_3] + \beta_2*[NH_3]^2}
+        E_{Ag^+/Ag} = E^{\phi]}_{Ag^+/Ag} + 0.059 * lg\frac{1}{\delta_{Ag^+}} = 0.50 V\\
+    \end{multlined}
+\end{equation}
+5.\begin{equation}
+    \begin{multlined}
+    Each:\\
+        KMnO_4:\\
+        E_{MnO_4^-/Mn^{2+}} = E^{\phi,}_{MnO_4^-/Mn^{2+}} + \frac{0.059}{5}lg\frac{[MnO_4^-]}{[Mn^{2+}]} = E^{\phi,}_{MnO_4^-/Mn^{2+}} = 1.45 V\\
+        K_2Cr_2O_7:\\
+        E_{Cr_2O_7^{2-}/Cr^{3+}} = E^{\phi,}_{Cr_2O_7^{2-}/Cr^{3+}} + \frac{0.059}{6}lg\frac{[Cr_2O_7^{2-}]}{[Cr^{3+}^2]} = 1.01 V\\
+    \end{multlined}
+\end{equation}
+6.\begin{equation}
+    \begin{multlined}
+        E^{\phi,}_{Fe^{3+}/Fe^{2+}} = E^{\phi}_{Fe^{3+}/Fe^{2+}} + lg\frac{\frac{c_{Fe^{3+}}}{\alpha_{FeY^{3+}}}}{\frac{c_{Fe^{2+}}}{\alpha_{FeY^{2+}}}}\\
+        \alpha_{FeY^{3+}} = 1 + [Y]*\beta_{FeY^{3+}}\\
+        \alpha_{FeY^{2+}} = 1 + [Y]*\beta_{FeY^{2+}}\\
+        Given:\\
+        \alpha_{Y(H)} = 10^{10.60}\\
+        [Y] = \frac{c_Y}{\alpha_{Y(H)}}\\
+        c_Y = 0.1 mol/L\\
+        E^{\phi,}_{Fe^{3+}/Fe^{2+}} = 0.134V\\
+    \end{multlined}
+\end{equation}
+7.\begin{equation}
+    \begin{multlined}
+        E^{\phi}_{Ag^+/Ag} = 0.8V\\
+        E^{\phi}_{Cu^{2+}/Cu} = 0.337V\\
+        2Ag^+ \sim Cu\\
+        lgK = \frac{(E^{\phi}_{Ag^+/Ag} - E^{\phi}_{Cu^{2+}/Cu})*2}{0.059} = 15.7\\
+        c_{Ag^+} = 0.05 mol/L\\
+        [Cu^{2+}] = 0.025 mol/L\\
+        [Ag^+] = \sqrt{\frac{[Cu^{2+}]}{K}} = 2.2*10^{-9} mol/L\\
+    \end{multlined}
+\end{equation}
+8.\begin{equation}
+    \begin{multlined}
+        E^{\phi}_{Cr_2O_7^{2-}/Cr^{3+}} = 1.33 V\\
+        E^{\phi}_{Fe^{3+}/Fe^{2+}} = 0.77V\\
+        lgK = \frac{(1.33 - 0.77)*6}{0.059} = 56.9\\
+        [Fe^{3+}] = 0.05 mol/L\\
+        K = \frac{[Fe^{3+}]^6[Cr^{3+}]^2}{[Cr_2O_7^{2-}][Fe^{2+}]^6[H^+]^14}\\
+        = \frac{[Fe^{3+}]^6*(\frac{1}{3}*[Fe^{3+}])^2}{\frac{1}{6}[Fe^{2+}]*[Fe^{2+}]^6*[H^+]^14}
+        Given:\\
+        [Fe^{2+}] = 10^{-6}mol/L\\
+        [H^+] = 0.015 mol/L\\
+    \end{multlined}
+\end{equation}
+9.\begin{itemize}
+    \item 
+\begin{equation}
+    \begin{multlined}
+        When $P = 0.5$\\
+        [I_2] = \frac{10*0.05}{30}\\
+        [I^-] = \frac{10*0.05*2}{30} + \frac{20*1}{30} - \frac{0.05*10}{30}\\
+        E^{\phi,}_{I_3^-/I_2} = 0.545 + \frac{0.059}{2}lg\frac{[I_3^-]}{[I^-]^3} = 0.507 V\\
+    \end{multlined}
+\end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            When $P = 1.0$\\
+            [S_4O_6^{2-}] = 0.1*20/40*0.5\\
+            [I^-] = 0.5 + 0.05*2*20/40\\
+            lgK = \frac{(0.545 - 0.08)*2}{0.059} = 15.8\\
+            K = \frac{[S_4O_6^{2-}][I^-]^3}{[S_2O_3^{2-}]^{2}[I_3^-]}\\
+            = \frac{[S_4O_6^{2-}][I^-]^3}{[I_3^-]*(2[I_3^-])^2}
+            E_{sp} = 0.545 + \frac{0.059}{2}*lg\frac{[I_3^-]}{[I^-]^3} = 0.384 V\\
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+    \begin{multlined}
+    When $P = 1.5$\\
+        [S_2O_3^{2-}] = \frac{0.1*10}{50}\\
+        [S_4O_6^{2-}] = \frac{0.05*20}{50}\\
+        E^{\phi,}_{S_4O_6^{2-}/S_2O_3^{2-}} = 0.08 + \frac{0.059}{2}lg\frac{[S_4O_6^{2-}]}{[S_2O_3^{2-}]^2} = 0.130 V\\
+    \end{multlined}
+    \end{equation}
+\end{itemize}
+10.\begin{equation}
+    \begin{multlined}
+        Suppose:\\
+        c_{Fe^{3+}} = c_{Sn^{2+}} = 1 mol/L\\
+        V_{Fe^{3+}} = V_{Sn^{2+}} = 1 L\\
+        When $P = 99.9\%$:
+        [Sn^{2+}] = \frac{0.01}{3}\\
+        [Sn^{4+}] = \frac{0.99}{3}\\
+        E = E^{\phi,}_{Sn^{4+}/Sn^{2+}} + \frac{0.059}{2}lg\frac{[Sn^{4+}]}{[Sn^{2+}]}\\
+        = 0.14 + \frac{0.059}{2}lg\frac{0.99}{0.01} = 0.199 V\\
+        When $P = 1.01$:\\
+        [Fe^{3+}] = \frac{0.02}{3}\\
+        [Fe^{2+}] = \frac{1.98}{3}\\
+        E = E^{\phi,}_{Fe^{3+}/Fe^{2+}} + 0.059lg\frac{0.02}{1.98} = 0.562 V\\
+    \end{multlined}
+\end{equation}
+11.\begin{equation}
+    \begin{multlined}
+        E^{\phi}_{Ce^{4+}/Ce^{3+}} = 1.44V\\
+        E^{\phi}_{Fe^{3+}/Fe^{2+}} = 0.68V\\
+        E_{sp} = \frac{1.44 + 0.68}{2} = 1.06V\\
+        E^{\phi}_{In} = 0.94V\\
+        \Delta E = -0.12V\\
+        Error = \frac{10^{\Delta E/0.059} - 10^{-\Delta E/0.059}}{10^{(1.44 - 0.68)/(2*0.059)}} = -0.004\%\\
+    \end{multlined}
+\end{equation}
+14.\begin{equation}
+    \begin{multlined}
+        c_{I_2} = \frac{500*10^{-3}*0.051\%}{32*11.6*10^{-3}} = 6.87*10^{-4}mol/L\\
+        P_S = \frac{7.00*10^{-3}*6.87*10^{-4}*32}{500*10^{-3}} = 0.003\%\\
+    \end{multlined}
+\end{equation}
+15.\begin{equation}
+    \begin{multlined}
+        5VO^{2+} \sim MnO_4^-\\
+        4Mn^{2+} \sim MnO_4^-\\
+        P_V = \frac{5*(0.02*2.5*10^{-3}*51)}{1.000} = 1.27\%\\
+        P_{Mn} = \frac{4*(0.02*4*10^{-3} - 0.02*2.5*10^{-3})*55}{1.000} = 1.48\%\\
+    \end{multlined}
+\end{equation}
+16.\begin{equation}
+    \begin{multlined}
+        2Ce^{4+} + 2I^- = 2Ce^{3+} + I_2\\
+        I_2 + I^- = I3^-\\
+        n_{I_2} = \frac{1}{2}* 0.005 * V - N_{I_3^-}\\
+        n_{I^-} = 0.005*0.05 - 0.005*V - n_{i_3^-}\\
+        c_{I2} = \frac{n_{I_2}}{0.05 + V} = 0.0133\\
+        \frac{n_{I_3^-}}{n_{I_2}*n_{I^-}} = 708\\
+        V = 26.69 mL\\
+    \end{multlined}
+\end{equation}
+17.\begin{equation}
+    \begin{multlined}
+        n_{PbO_2} = n_1 mmol\\
+        n_{PbO} = n_2 mmol\\
+        2n_1 + n_2 = 20*0.25 - 0.04*10*\frac{5}{2}\\
+        n_1 + n_2 = 30 * 0.04 * \frac{5}{2}\\
+        n_1 = 1 mmol\\
+        n_2 = 2 mmol\\
+        w_{PbO_2} = 19.38\%\\
+        w_{PbO} = 36.18\%\\
+    \end{multlined}
+\end{equation}
+18.\begin{equation}
+    \begin{multlined}
+        Cr_2O_7^{2-} \sim 6 Fe^{2+}\\
+        p_{FeO} = 0.03 mol/L * 25 mL * 6 * M_{FeO} / M_{sample} = 32.3\%\\
+        p_{Al2O3} = (0.5 - 0.03 mol/L * 25 mL * 6 * \frac{M_{Fe_2O_3}}{2}) / M_{sample} = 14.09\%\\
+    \end{multlined}
+\end{equation}
+19.\begin{equation}
+    \begin{multlined}
+        2I_2\sim S_2O_3^{2-}\\
+        5I^- \sim IO_3^-\\
+        c_{KI} = \frac{5*(10*0.05 - \frac{1}{2*3}*0.1008*21.14)}{25.00} = 0.029 mol/L\\
+    \end{multlined}
+\end{equation}
+20.\begin{equation}
+    \begin{multlined}
+        n_{Mn} = n_1\\
+        n_{Cr} = n_2\\
+        n_{Fe^{2+}} = 0.1*50*10^{-3} - 0.01*18.4*10^{-3}*5 = 4.08*10^{-3} mol\\
+        3MnO_4^{2-} \sim 2MnO_4^- + MnO_2\\
+        \frac{2}{3}*n1*5 + n2*3 = n_{Fe^{2+}}\\
+        \frac{1}{3}*n_1 = \frac{1}{2}*(0.1*10*10^{-3} - 0.01*8.24*10^{-3}*5)\\
+        n_1 = 8.82*10^{-4} mol\\
+        n_2 = 3.8*10^{-4} mol\\
+        w_{MnO} = 3.13\%\\
+        w_{Cr_2O_3} = 1.44\%\\
+    \end{multlined}
+\end{equation}
+21.\begin{equation}
+    \begin{multlined}
+        3NO_2 + H_2O = 2HNO_3 + NO\\
+        P_{NH_3} = \frac{\frac{3}{2}*0.01 * 0.02 * M_{NH_3}}{1.000} = 0.51\%\\
+    \end{multlined}
+\end{equation}
+22.\begin{equation}
+    \begin{multlined}
+        P_{Fe_2O_3} = \frac{5 * 0.025 * 41.27 * 10^{-3} * \frac{1}{2} * M_{Fe_2O_3}}{0.4185} = 98.42\%\\
+    \end{multlined}
+\end{equation}
+23.\begin{equation}
+    \begin{multlined}
+        2KMNO_4^- \sim 3Mn^{2+}\\
+        P_{Mn} = \frac{\frac{3}{2}*0.03358*34.88*10^{-3}*M_{Mn}}{0.5165} = 18.69\%\\
+    \end{multlined}
+\end{equation}
+24.\begin{equation}
+    \begin{multlined}
+        U^{4+} + 2Fe^{3+} = 2Fe^{2+} + U^{6+}\\
+        Cr_2O_7^{2-} \sim 6Fe^{2+}\\
+        P_{U} = \frac{\frac{1}{2}*6*0.00978*10.52*10^{-3}*238.0}{0.315} = 23.32\%\\
+    \end{multlined}
+\end{equation}
+25.\begin{equation}
+    \begin{multlined}
+        Cr \sim \frac{1}{2}Cr_2O_7^{2-} \sim 3 Fe^{2+}\\
+        d_{Cr} = \frac{\frac{1}{3}*(\frac{0.5}{M_{Fe(NH_4)(SO_4)_2\cdot6H_2O}} - 6*0.00389*18.29*10^{-3})*M_{Cr}}{7.20*30}\\
+        = 7.3*10^{-5} cm\\
+    \end{multlined}
+\end{equation}
+26.\begin{equation}
+    \begin{multlined}
+        5CO \sim I_2O_5\sim I_2\\
+        I3^- \sim 2S_2O_3^{2-}\\
+        w_{CO} = \frac{5*\frac{1}{2}*7.17*10^{-3}*0.00329*M_{CO}*10^6}{4.79*1.23} = 280 ug/g\\
+    \end{multlined}
+\end{equation}
+27.\begin{equation}
+    \begin{multlined}
+        I^-\sim IO_3^- \sim 3I_2\sim 6I^-\sim 6IO_3^-\sim 18I_2\sim 36Na_2S_2O_3\\
+        w_{KI} = \frac{166*\frac{1}{36}*0.1*20.06*10^{-3}}{25*10^{-3}} = 0.37 g/L\\
+    \end{multlined}
+\end{equation}
+28.\begin{equation}
+    \begin{multlined}
+        IO_4^- \sim I_2 \sim AsO_3^{3-}\\
+        c_{IO_4^-} = \frac{40.10*0.05}{50*10^{-3}} = 40.1 mmol/L\\
+        M_{CH_2OHCH_2OH} = (50 - \frac{0.05*14.3}{40.1}*10^3)*10^{-3}*40.1*M_{CH_2OHCH_2OH} = 80.0mg\\
+    \end{multlined}
+\end{equation}
+29.\begin{equation}
+    \begin{multlined}
+        Suppose:\\
+        n_{HCOOH} = n_1\\
+        n_{HAc} = n_2\\
+        HCOO^-\sim2MnO_4^{2-}\sim\frac{4}{3}MnO_4^-\sim \frac{2}{3}MnO_2\\
+        n_{KMnO_4, remaining} = 0.025*50*10^{-3} - 2n_1\\
+        n_{Fe^{2+}} = (n_{KMnO_4, remaining} + \frac{4}{3}*n_1)*5 + \frac{2}{3}*n_1*2\\
+        n_{Fe^{2+}} = 0.2*40*10^{-3} - 0.025*24*10^{-3}*5\\
+        n_1 = 6.25*10^{-4} mol\\
+        Given:\\
+        n_1 + n_2 = 0.1*25*10^{-3}\\
+        n_2 = 1.875*10^{-3}mol\\
+        c_{HCOOH} = 0.03125mol/L\\
+        c_{HAc} = 0.09375mol/L\\
+    \end{multlined}
+\end{equation}
+30.\begin{equation}
+    \begin{multlined}
+        n_{Cr_2O_7^{2-}} = 25*10^{-3}*0.01667 - 15*10^{-3}*0.1*\frac{1}{6}\\
+        3O_2 \sim 2Cr_2O_7^{2-}\\
+        COD = \frac{3}{2}*n_{Cr_2O_7^{2-}}*M_{O_2}/0.100 = 80.04mg/L\\
+    \end{multlined}
+\end{equation}
+31.\begin{equation}
+    \begin{multlined}
+        CH_3COCH_3 \sim 3I_2\\
+        I_2 \sim 2S_2O_3^{2-}\\
+        w_{CH_3COCH_3} = \frac{10* M_{CH_3COCH_3}*\frac{1}{3}*(50*10^{-3}*0.05 - \frac{1}{2}*0.1*10*10^{-3})}{1} = 38.67\%\\
+    \end{multlined}
+\end{equation}
+33.\begin{equation}
+    \begin{multlined}
+        PbO_2\sim I_2\sim 2NaS_2O_3\\
+        n_{PbO_2} = \frac{1}{2}*c_{NaS_2O_3} * V_{NaS_2O_3}\\
+        n_{PbO} = c_Y*V_Y - n_{PbO_2}\\
+    \end{multlined}
+\end{equation}
+36.\begin{equation}
+    \begin{multlined}
+        n_{H_2O_2} = \frac{1.023}{153.86}*\frac{1}{10} = 6.65*10^{-4}mol\\
+        2MnO_4^- \sim 5H_2O_2:\\
+        V_{MnO_4^-} = \frac{2}{5}*n_{H_2O_2}/c_{MnO_4^-} = 25.4 mL\\
+        V_{MnO_4^-} = \frac{2}{3}*n_{H_2O_2}/c_{MnO_4^-} = 42.4 mL\\
+    \end{multlined}
+\end{equation}
+37.\begin{equation}
+    \begin{multlined}
+        C_3H_8O_3 \sim 8Ce^{4+}\\
+        w_{C_3H_8O_3} = \frac{M_{C_3H_8O_3}*\frac{1}{8}*(50*10^{-3}*0.0837 - 12.11*10^{-3}*0.0448)}{0.1} = 41.89\%\\
+    \end{multlined}
+\end{equation}
+\end{document}

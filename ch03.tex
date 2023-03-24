@@ -1,0 +1,275 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{CJK}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{Analytical chemistry (5th Edition)}
+\author{LuMg}
+\date{February 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter 3}
+1. calculation
+\begin{enumerate}
+  \item 19.469 + 1.537 - 0.0386 + 2.54 = 23.51
+  \item 3.6 * 0.0323 * 20.59 * 2.12345 = 5.1
+  \item \(\frac{45.00*(24.00-1.32)*1.245}{1.0000*1000}\) = 0.127
+  \item pH = 0.06\\
+  $[{H}^{+}] = {10}^{-0.06} = 0.87 mol/L$
+\end{enumerate}
+2.\begin{equation}
+    \begin{multlined}
+        E_{r} = \frac{2}{5}*\left(V_{1r}+V_{2r}\right)+m_{r} = 0.4*\left(\frac{0.02}{25.00}+\frac{0.02}{5.00}\right)+\frac{0.0002}{0.2000} = 0.3\%\\
+    \end{multlined}
+\end{equation}
+3.\begin{equation}
+    \begin{multlined}
+        x = \frac{A-C}{m} = 7.0\\
+        \frac{S_x^2}{x^2} = \frac{S_\left(A-C\right)^2}{\left(A-C\right)^2} + \frac{S_m^2}{m^2}\\
+        =\frac{S_A^2+S_C^2}{\left(A-C\right)^2} + \frac{S_m^2}{m^2}\\
+        S_x = 0.14\\
+    \end{multlined}
+\end{equation}
+4. 
+\begin{enumerate}
+    \item 
+    \begin{equation*}
+  \begin{multlined}
+    x_{1} = 20.48\%\\
+    x_{2} = 20.55\%\\
+    x_{3} = 20.58\%\\
+    x_{4} = 20.60\%\\
+    x_{5} = 20.53\%\\
+    x_{6} = 20.50\%\\
+    \overline{x} = \frac{x_{1}+x_{2}+x_{3}+x_{4}+x_{5}+x_{6}}{6} = 20.54\%\\
+    x_{mid} = \frac{20.53\% + 20.55\%}{2} = 20.54\%\\
+    x_{dist} = 20.60\% - 20.48\% = 0.12\%\\
+    \overline{d} = \frac{\Sigma di}{N} = \frac{\Sigma (\abs{x_{i} - \overline{x}})}{N} = \frac{0.06 + 0.01 + 0.04 + 0.06 + 0.01 + 0.04}{6} = 0.04\%\\
+    s = \sqrt{\frac{\Sigma (x - x_{i})^{2}}{N - 1}} = \sqrt{\frac{0.06^{2} + 0.01^{2}+0.04^{2}+0.06^{2}+0.01^{2}+0.04^{2}}{5}} = 0.05\%\\
+    \overline{s} = \frac{s}{\overline{x}}*100\% = \frac{0.05}{20.54} = 0.2\%
+    \item
+    E_{abs} = \abs{\overline{x} - x} = \abs{20.54\% - 20.45\%} = 0.09\%\\
+    E_{rel} = \frac{E_{abs}}{x} = 0.4\%
+\end{multlined}
+\end{equation*}
+    \end{enumerate}
+5. \begin{equation}
+    m = 1.000g, s = 0.4mg,\\
+    1.0000g~1.0008g means (\mu, \mu + 2*\sigma) = 47.75%
+\end{equation}
+6. \begin{equation}
+    (\mu - 0.5*\sigma, \mu + 1.0 * \sigma) = 0.1915 + 0.3413 = 53.28\%
+\end{equation}
+9.\begin{equation}
+    \begin{multlined}
+        x_1 = 30.48\%\\
+        x_2 = 30.42\%\\
+        x_3 = 30.59\%\\
+        x_4 = 30.51\%\\
+        x_5 = 30.56\%\\
+        x_6 = 30.49\%\\
+        \overline{x} = \frac{x_1+x_2+x_3+x_4+x_5+x_6}{6} = 30.51\%\\
+        s = \sqrt{\frac{\left(x - \overline{x}\right)^2}{n - 1}} = 0.06\%\\
+        \mu = \overline{x} + t_{0.05, n - 1}*\frac{s}{\sqrt{n}} = 30.51\%+0.06\%\\
+    \end{multlined}
+\end{equation}
+10.\begin{equation}
+    \begin{multlined}
+        \overline{x} = 52.43\%\\
+        \sigma = 0.06\%\\
+        \left[\overline{x} - 1.96*\sigma, \overline{x} + 1.96*\sigma\right] = \left[52.31\%, 52.54\%\right]\\
+    \end{multlined}
+\end{equation}
+So we can know it is in 95\% confidence.\\
+11.\begin{itemize}
+    \item 
+    \begin{equation}
+        \begin{multlined}
+            x_1 = 9.56\\
+            x_2 = 9.49\\
+            x_3 = 9.62\\
+            x_4 = 9.51\\
+            x_5 = 9.58\\
+            x_6 = 9.63\\
+            \overline{x} = \frac{x_1+x_2+x_3+x_4+x_5+x_6}{6} = 9.56\\
+            s = \sqrt{\frac{\left(x - \overline{x}\right)^2}{n- 1}} = 0.06\\
+            t_{0.1, n - 1} = 2.02\\
+            \left[9.56 - 2.02 * s, 9.56 + 2.02 *s\right] = \left[9.44, 9.68\right]\\
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            x_1 = 9.33\\
+            x_2 = 9.51\\
+            x_3 = 9.49\\
+            x_4 = 9.51\\
+            x_5 = 9.56\\
+            x_6 = 9.40\\
+            \overline{x} = \frac{x_1+x_2+x_3+x_4+x_5+x_6}{6} = 9.47\\
+            s = \sqrt{\frac{\left(x - \overline{x}\right)^2}{n- 1}} = 0.08\\
+            t_{0.1, n - 1} = 2.02\\
+            \left[9.47 - 2.02 * s, 9.47 + 2.02 *s\right] = \left[9.31, 9.63\right]\\
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+So for both dataset there is no significant difference.\\
+12.\begin{equation}
+    \begin{multlined}
+        x = 54.46\%\\
+        x_i = 54.26\%\\
+        \sigma = 0.05\%\\
+        x - 1.96*\sigma = 54.36\% > 54.26\%\\
+    \end{multlined}
+\end{equation}
+So we are confident there is error.\\
+13.\begin{itemize}
+    \item 
+    \begin{equation}
+        \begin{multlined}
+            F = \sqrt{\frac{0.12^2}{0.10^}} = 1.44 < F_{90\%, 10, 10} = 2.97\\
+        \end{multlined}
+    \end{equation}
+    No significant difference.\\
+    \item
+    \begin{equation}
+        \begin{multlined}
+            s = \sqrt{\frac{s_1^2*\left(n_1 - 1\right)+s_2^2*\left(n_2 - 1\right)}{n_1 - 1 + n_2 - 1}} = 0.11\%\\
+            t = \frac{abs(\overline{x_1} - \overline{x_2})}{s}*\sqrt{\frac{n_1*n_2}{n_1+n_2}} = 1.92\\
+            Given:\\
+            t_{0.1, 20} = 1.72\\
+            t_{0.05, 20} = 2.09\\
+            t_{0.01, 20} = 2.84\\
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+14.\begin{equation}
+    \begin{multlined}
+        Given:\\
+        n = 4\\
+        \overline{x} = 16.72\%\\
+        s = 0.08\%\\
+        x = 16.62\%\\
+        So:\\
+        t_{0.1,3} = 2.35\\
+        \left[\overline{x}-t*\frac{s}{\sqrt{n}}, \overline{x}+t*\frac{s}{\sqrt{n}}\right] = \left[16.63, 16.81\right]\\
+    \end{multlined}
+\end{equation}
+So the new method is acceptable\\
+15.\begin{equation}
+    \begin{multlined}
+        \overline{x_1} = 60.45\%\\
+        \overline{x_2} = 60.11\%\\
+        s_1 = \sqrt{\frac{\left(x - \overline{x_1}\right)^2}{n - 1}} = 0.048\\
+        s_2 = \sqrt{\frac{\left(x - \overline{x_1}\right)^2}{n - 1}} = 0.051\\
+        s = \sqrt{\frac{s_1^2*\left(n_1 - 1\right)+s_2^2*\left(n_2 - 1\right)}{n_1 - 1 + n_2 - 1}} = 0.05\\
+        t = \frac{abs(\overline{x_1} - \overline{x_2})}{s}*\sqrt{\frac{n_1*n_2}{n_1+n_2}} = 9.62 > t_{0.1, 6} = 1.94\\
+    \end{multlined}
+\end{equation}
+So the difference is significant.\\
+16.\begin{equation}
+    \begin{multlined}
+        x = 0.0520\%\\
+        \overline{x} = 0.0534\%\\
+        s = 0.0007\\
+        t_{0.05,3} = 3.18\\
+        \overline{x} - t_{0.05,3}*\frac{s}{\sqrt{n}} = 0.0523\% > x\\
+    \end{multlined}
+\end{equation}
+17.\begin{equation}
+    \begin{multlined}
+        \overline{x_1} = 0.127\\
+        \overline{x_2} = 0.135\\
+        s_1 = 0.0036\\
+        s_2 = 0.0043\\
+        s = \sqrt{\frac{s_1^2*\left(n_1 - 1\right)+s_2^2*\left(n_2 - 1\right)}{n_1 - 1 + n_2 - 1}} = 0.004\\
+        t = \frac{abs(\overline{x_1} - \overline{x_2})}{s}*\sqrt{\frac{n_1*n_2}{n_1+n_2}} = 2.83 > t_{0.05, 6} = 2.45\\
+    \end{multlined}
+\end{equation}
+So there is significant improvement.\\
+18.We need to exclude the current suspicious data:\\
+\begin{itemize}
+    \item 
+    \begin{equation}
+        \begin{multlined}
+            x_1 = 0.1011\\
+            x_2 = 0.1010\\
+            x_3 = 0.1012\\
+            x_4 = 0.1016\\
+            \overline{x} = \frac{x_1+x_2+x_3}{3} = 0.1011\\
+            \overline{d} = \Sigma\frac{\abs\left(x - \overline{x}\right)}{3} = 0.000067\\
+            \delta = 0.1016 - 0.1011 > 4 *\overline{d}\\
+        \end{multlined}
+    \end{equation}
+    So the $4^{th}$ data point should be discarded.\\
+    \item
+    \begin{equation}
+        \begin{multlined}
+            x_5 = 0.1014\\
+            \overline{x} = \frac{x_1+x_2+x_3+x_5}{4} = 0.101175\\
+            \overline{d} = \Sigma\frac{\abs\left(x - \overline{x}\right)}{4} = 0.000150\\
+            \delta = 0.1016 - 0.101175 < 4*\overline{d}\\
+        \end{multlined}
+    \end{equation}
+    So the $4^{th}$ data point should not be discarded.\\
+\end{itemize}
+19.\begin{equation}
+    \begin{multlined}
+        \overline{x} = 0.015\\
+        s = 0.665\\
+        T_1 = \frac{x_i - \overline{x}}{s} = \frac{1.01 - 0.015}{0.665} = 1.50 < T_{0.05, 10} = 2.18\\
+        T_2 = \frac{\overline{x} - x_i}{s} = \frac{0.015 + 1.40}{0.665} = 2.13 < T_{0.05, 10} = 2.18\\
+    \end{multlined}
+\end{equation}
+So both data points should not be discarded.\\
+20. We only need to check maximum and minimum first.\\
+\begin{itemize}
+    \item 
+    When we suspect 4.71\%:\\
+    \begin{equation}
+        \begin{multlined}
+            \overline{x} = 4.89\%\\
+            \overline{d} = \Sigma\frac{\abs\left(x - \overline{x}\right)}{9} = 0.031\%\\
+            \delta = \overline{x} - 4.71\% > 4*\overline{d}\\
+        \end{multlined}
+    \end{equation}
+    So $4.71\%$ should be discarded.\\
+    \item
+    Still we suspect 4.71\%:\\
+    \begin{equation}
+        \begin{multlined}
+            Q = \frac{4.85 - 4.71}{4.99 - 4.71} = 0.5 < Q_{0.99, 10} = 0.57\\
+        \end{multlined}
+    \end{equation}
+    So this value should not be discarded.\\
+\end{itemize}
+21.\begin{equation}
+    \begin{multlined}
+        \overline{x} = 6\\
+        \overline{y} = 13.1\\
+        \Sigma\left(x - \overline{x}\right)*\left(y - \overline{y}\right) = 208\\
+        \Sigma\left(x - \overline{x}\right)^2 = 112\\
+        b = \frac{\Sigma\left(x - \overline{x}\right)*\left(y - \overline{y}\right)}{\Sigma\left(x - \overline{x}\right)^2} = 1.86\\
+        a = \overline{y} - b*\overline{x} = 1.94\\
+        Equation:\\
+        y = 1.94+1.86x\\
+        r = b*\sqrt{\frac{\Sigma\left(x - \overline{x}\right)^2}{\Sigma\left(y - \overline{y}\right)^2}} = 0.998\\
+    \end{multlined}
+\end{equation}
+22.\begin{equation}
+    \begin{multlined}
+        \overline{x} = 0.60\\
+        \overline{y} = 0.178\\
+        \Sigma\left(x - \overline{x}\right)*\left(y - \overline{y}\right) = 0.102\\
+        \Sigma\left(x - \overline{x}\right)^2 = 0.40\\
+        b = \frac{\Sigma\left(x - \overline{x}\right)*\left(y - \overline{y}\right)}{\Sigma\left(x - \overline{x}\right)^2} = 0.255\\
+        a = \overline{y} - b*\overline{x} = 0.025\\
+        Equation:\\
+        y = 0.025+0.255x\\
+        r = b*\sqrt{\frac{\Sigma\left(x - \overline{x}\right)^2}{\Sigma\left(y - \overline{y}\right)^2}} = 0.999\\
+    \end{multlined}
+\end{equation}
+\end{document}

@@ -1,0 +1,401 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{CJK}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{Analytical chemistry (5th Edition)}
+\author{LuMg}
+\date{February 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter 5}
+1.
+\begin{itemize}
+    \item $\left[NH_4^+\right]+\left[H^+\right] = \left[OH^-\right] + \left[NH_3\right]$\\
+    \item $\left[H^+\right]=\left[H2BO_3^-\right] +\left[OH^-\right]$\\
+    \item $\left[H^+\right] = \left[H_2PO_4\right] + 2*\left[HPO_4^{2-}\right] +3*\left[PO_4^{3-}\right] + \left[HCOO^-\right]$\\
+    \item $\left[H^+\right] = \left[OH^-\right] + \left[Fe\left(OH\right)\right] + 2*\left[Fe\left(OH\right)^{2-}\right] + 3*\left[Fe\left(OH\right)^3\right]$
+\end{itemize}
+2.\begin{itemize}
+    \item
+    \begin{equation}
+        \begin{multlined}
+        For H_3BO_3, K_{a1} = 5.8*10^{-10}\\
+        K_{a2} = 4.0*10^{-13} can be neglected\\
+        \left[H^+\right] = \left[OH^-\right] + \left[H_2BO_3^-\right]\\
+        where\\
+        \left[OH^-\right] = \frac{K_w}{\left[H^+\right]}\\
+        \left[H_2BO_3^-\right] = \frac{\left[H_3BO_3\right]*K_{a1}}{\left[H^+\right]}\\
+        \left[H^+\right] = \sqrt{K_{a1}*\left[H_3BO_3\right] + K_w} = 7.62*10^{-6}mol/L\\
+        pH = 5.12
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            For H_2SO_4, K_{a1} = 1.7*10^{-2}\\
+            K_{a2} = 6.4*10^{-8} which can be neglected\\
+            K_w can also be neglected\\ 
+            Same eqaution as above\\
+            \left[H^+\right] = \sqrt{K_{a1}*\left[H_2SO_4\right] + K_w} \\
+            where \left[H_2SO_4\right] = \frac{\left[H^+\right]}{\left[H^+\right] + K_{a1}}\\
+            \left[H^+\right]^3+K_{a1}*\left[H^+\right]^2-K_{a1}*c*\left[H^+\right] - K_{a1}*K_{w} = 0\\
+            \left[H^+\right] = \frac{-K_{a1}+\sqrt{K_{a1}^2+4*K_{a1}*c}}{2}\\
+            = 0.0336 mol/L\\
+            pH = 1.47
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            K_b=2.5*10^{-10}\\
+            \left[OH^-\right] = \frac{-K_b+\sqrt{K_b^2+4*K_b*c}}{2} = 5.0*10^{-6}mol/L\\
+            pH = 8.7
+        \end{multlined}
+    \end{equation}
+    \item
+    HCl can be redeemed as $K_a = \inf$
+    \begin{equation}
+        \begin{multlined}
+            \left[H^+\right] = \left[Cl^-\right] + \left[OH^-\right]\\
+            \left[H^+\right] = c_{HCl} + \frac{K_w}{\left[H^+\right]}\\
+            \left[H^+\right] = \frac{c+\sqrt{c^2+4*K_w}}{2} = 1.28*10^{-7} mol/L\\
+            pH = 6.89
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            K_a = 7.52*10^{-3}\\
+            \left[H^+\right] = \sqrt{K_a*c} = 0.0388 mol/L\\
+            pH = 1.41
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+3.\begin{itemize}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            k_b = 5.6*10^{-10}\\
+            \left[OH^-\right] = \sqrt{K_b*c} = 5.29*10^{-6} mol/L\\
+            pH = 8.72
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            k_a_{NH_4^+} = 5.5*10^{-10}\\
+            \left[H^+\right] = \sqrt{k_a*c} = 5.24*10^{-6}\\
+            pH = 5.28
+        \end{multlined}
+    \end{equation}
+    \item
+    use PBE:\\
+    \begin{equation}
+        \begin{multlined}
+            \left[H^+\right] = \left[OH^-\right] + \left[NH_3\right] - \left[HCN\right]\\
+            let:\\
+            K_{a1} = K_{a, NH_4^+}\\
+            K_{a2} = K_{a, HCN}\\
+            then:\\
+            \left[H^+\right] = \sqrt{\frac{K_{a2}\left(K_w+K_{a1}*c\right)}{k_{a2}+c}} = 5.84*10^{-10} mol/L\\
+            pH = 9.23\\
+        \end{multlined}
+    \end{equation}
+    \item
+    The same equation as above:\\
+    \begin{equation}
+        \begin{multlined}
+            \left[H^+\right] = \sqrt{\frac{K_{a2}*\left(K_w+K_{a3}*c\right)}{K_{a2}+c}} = 2.06*10^{-10} mol/L\\
+            pH = 9.69\\
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            \left[H_4N^+CH_2COOH\right]\\
+            K_{a1} = 4.5*10^{-3}\\
+            K_{a2} = 2.5*10^{-10}\\
+            \left[H^+\right] = \sqrt{\frac{K_{a1}*\left(K_w+K_{a2}*c\right)}{K_{a1}+c}} = 1.02*10^{-6} mol/L\\
+            pH = 5.99
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            K_{b1} = 1.41\\
+            K_{b2} = 7.69*10^{-8}\\
+            \left[OH^-\right] = \sqrt{K_{b1}*\left[S^{2-}\right]}\\
+            \left[OH^-\right] = \sqrt{K_{b1}*c*\frac{\left[OH^-\right]}{\left[OH^-\right] + K_{b1}}}\\
+            \left[OH^-\right] = \frac{-K_{b1}+\sqrt{K_{b1}^2+4*K_{b1}*c}}{2} = 0.0938 mol/L\\
+            pH = 12.97
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            K_a = 2.24*10^{-12}\\
+            \left[H^+\right] = \sqrt{K_a*c + K_w} = 1.8*10^{-7} mol/L\\
+            pH = 6.74
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            \left[CH_3CH_2NH_4^+\right]\\
+            \left[NH_4Cl\right]\\
+            K_{HA} = 1.8*10^{-11}\\
+            K_{HB} = 5.5*10^{-10}\\
+            \left[H^+\right] = \sqrt{K_{HA}*c+K_{HB}*c} = 5.33*10^{-6}mol/L\\
+            pH = 5.27\\
+        \end{multlined}
+    \end{equation}
+    \item
+    using PBE:
+    \begin{equation}
+        \begin{multlined}
+            K_{a, ClCH_2COOH} = 1.4*10^{-3}\\
+            \left[H^+\right] = \left[OH^-\right] - \left[ClCH_2COOH\right] + c_{Cl^-}\\
+            \left[H^+\right] = - \left[ClCH_2COOH\right] + c_{Cl^-}\\
+            \frac{K_w}{\left[OH^-\right]} = -\frac{K_b\left[ClCH_2COO^-\right]}{\left[OH^-\right]} + c_{Cl^-}\\
+            c_{Cl^-}\left[OH^-\right]^2 + \left(c_{Cl^-}*K_b - K_b*c_{Na+} - K_w right)*\left[OH^-\right]-K_w*K_b = 0\\
+            \left[OH^-\right] = 6.93*10^{-13}mol/L\\
+            pOH = 12.16\\
+            pH = 1.84
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+4.\begin{equation}
+    \begin{multlined}
+        pH = 7.40\\
+        K_{a1} = 4.0*10^{-7}\\
+        K_{a2} = 7.0*10^{-11}\\
+        \left[H_2CO_3\right] = \frac{\left[H^+\right]^2}{\left[H^+\right]^2+ K_{a1}*\left[H^+\right]+K_{a1}*K_{a2}} = 0.0904\\
+        \left[HCO_3^-\right] = \frac{K_{a1}*\left[H^+\right]}{\left[H^+\right]^2+ K_{a1}*\left[H^+\right]+K_{a1}*K_{a2}} = 0.908\\
+        \left[CO_3^{2-}\right] = \frac{K_{a1}*K_{a2}}{\left[H^+\right]^2+ K_{a1}*\left[H^+\right]+K_{a1}*K_{a2}} = 0.002\\
+    \end{multlined}
+\end{equation}
+5. \begin{equation}
+    \begin{multlined}
+        c_{HCl} = 0.1mol/L\\
+        c_{HSO_4^-} = 2.0*10^{-4}mol/L\\
+        c_{Ac^-} = 2.0*10^{-8}mol/L\\
+        \left[H^+\right] = 0.1 mol/L\\
+        pH = 1.00\\
+        \left[H^+\right] = \left[OH^-\right] + \left[Ac^-\right] + \left[HSO_4^-\right]\\
+        \left[H^+\right] = \left[HSO_4^-\right]\\
+        \left[H^+\right] = 2*10^{-4}mol/L\\
+        pH = 3.70\\
+    \end{multlined}
+\end{equation}
+6.\begin{equation}
+    \begin{multlined}
+        0.02 mol/L Na_2CO_3\\
+        0.08 mol/L NaHCO_3\\
+        0.08 mol/L NaHC_2O_4\\
+        \left[OH^-\right] = \sqrt{K_{b,CO3^{2-}}*0.02 + K_{b,HCO_3^-}*0.08 + K_{b, HC_2O_4}*0.08} = 1.78*10^{-3} mol/L\\
+        pH = 11.25\\
+    \end{multlined}
+\end{equation}
+7. \begin{equation}
+    \begin{multlined}
+        K_{a, Cr^{3+}} = 10^{-3.8}\\
+        \left[H^+\right] = \sqrt{K_{a,Cr^{3+}}* c} = 1.26*10^{-3}mol/L\\
+        pH = 2.9\\
+        P_{Cr\left(OH\right)^{2+}} = \frac{K_a}{K_a + \left[H^+\right]} = 0.11\\
+    \end{multlined}
+\end{equation}
+8.
+\begin{equation}
+    \begin{multlined}
+        pH = pKa + lg\frac{c_{Ac^-}}{HAc}\\
+        4.44 = 4.75 + lg\frac{\frac{m_{NaAc}}{M_{NaAc}} - n_{HCl}}{n_{HCl}}\\
+        4.44 = 4.75 + lg\frac{\frac{m_{NaAc}}{82} - 0.01}{0.01}\\
+        m_{NaAc} = 1.22g\\
+    \end{multlined}
+\end{equation}
+9. Let the original $c_{B-}$:\\
+In the previous equation:\\
+\begin{equation}
+    \begin{multlined}
+        pH = pKa + lg\frac{c_{B^-}}{c_{HB}}\\
+    \end{multlined}
+\end{equation}
+In the new solution:\\
+\begin{equation}
+    \begin{multlined}
+        pH = 5.3 + lg\frac{c_{B^-}*V + \frac{m_{NaOH}}{M_{NaOH}}}{c_{HB}*V - \frac{m_{NaOH}}{M_{NaOH}}}\\
+        pH = 5.44\\
+    \end{multlined}
+\end{equation}
+10. \begin{equation}
+    \begin{multlined}
+        K_{a, HCOOH} = 1.8*10^{-4}\\
+        pH = pKa + lg\frac{c_{NaOH}*V_{NaOH}}{c_{HCOOH}*V_{HCOOH} - c_{NaOH}*V_{NaOH}}\\
+    \end{multlined}
+\end{equation}
+Given $pH = 3.0$, $V_{NaOH} = 6.0mL$\\
+Given $pH = 4.0$, $V_{NaOH} = 25.7mL$\\
+11. \begin{equation}
+    \begin{multlined}
+        m_{NH_2CH_2COOH} = M_{NH_2CH_2COOH} * c * V = 0.75g\\
+        \beta = 2.30*\left[H^+\right]+2.30*\frac{c*K_a*\left[H^+\right]}{\left(\left[H^+\right]+K_a\right)^2} = 0.072\\
+        V_{add} = \beta * V = 7.2 mL\\
+    \end{multlined}
+\end{equation}
+12. \begin{equation}
+    \begin{multlined}
+        n_{\left(CH_2\right)_6N_4} = \frac{m_\left(CH_2\right)_6N_4}{M_\left(CH_2\right)_6N_4} = 0.14 mol\\
+        n_{HCl} = c_{HCl}*V_{HCl} = 0.048mol\\
+        \frac{B^-}{HB} = \frac{0.14 - 0.048}{0.048} < 10\\
+    \end{multlined}
+\end{equation}
+13. \begin{itemize}
+    \item 
+    \begin{equation}
+        \begin{multlined}
+            K_{a1} = 9.1*10^{-4}\\
+            K_{a2} = 4.3*10^{-5}\\
+            I = \frac{1}{2}\Sigmac_i*z_i^2\\
+            =\frac{1}{2}\left(0.034*1+0.034*1\right)
+            =0.034\\
+            lg\gamma_i = 0.0514\\
+            \left[H^+\right] = \sqrt{K_{a1}*K_{a2}}\\
+            =\sqrt{K_{a1}*K_{a2}*\frac{1}{\gamma B}} = 2.76*10^{-4} mol/L\\
+            pH = 3.56\\
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+14.
+\begin{equation}
+    \begin{multlined}
+        \left[OH^-\right] = \sqrt{\frac{K_w}{K_a}*\frac{c}{1.25}}\\
+        pH = 14 - pOH = 8.82\\
+    \end{multlined}
+\end{equation}
+15.\begin{equation}
+    \begin{multlined}
+        pH = pKa_1 = 1.92\\
+        pH = pKa_2 = 6.22\\
+        Ka_1 = 1.2*10^{-2}\\
+        Ka_2 = 6.0*10^{-7}\\
+        \left[H^+\right] = \sqrt{\frac{Ka_1*Ka_2*c}{Ka_1+c}}
+        pH = 4.12\\
+        \left[H^+\right]_{2} = \sqrt{\frac{K_w}{K_a}*c} = 2.35*10^{-5} mol/L\\
+        pH = 9.37\\
+    \end{multlined}
+\end{equation}
+16.\begin{equation}
+    \begin{multlined}
+        \left[H^+\right] = \sqrt{k_a*c} = 3.0\\
+        K_a = 10^{-5}\\
+        \left[OH^-\right] = \sqrt{\frac{k_w}{k_a}*c} = 10^{-5} mol/L\\
+        pH = 9.0\\
+    \end{multlined}
+\end{equation}
+17. Let:\\
+\begin{equation}
+    \begin{multlined}
+        n_{Na_2CO_3} = n1\\
+        n_{NaHCO_3} = n2\\
+        M_{Na_2CO_3}*n1+M_{NaHCO_3}*n2 = m_{sample}\\
+        2*n1+n2 = c_{HCl}*V{HCl}\\
+        n1 = 2.5*10^{-3} mol\\
+        n2 = 5.0*10^{-3} mol\\
+        V_{HCl, new} = \frac{n1}{c_{HCl}} = 12.5 mL\\
+    \end{multlined}
+\end{equation}
+18.\begin{equation}
+    \begin{multlined}
+    pH = 4.80 = pK_a + lg\frac{V_{NaOH}}{V_{ep, NaOH} - V_{NaOH}}\\
+    =pK_a + lg\frac{11.00}{24.60 - 11.00}\\
+    pKa = 4.89\\
+    \end{multlined}
+\end{equation}
+19.\begin{equation}
+    \begin{multlined}
+        \left[OH^-\right] = \sqrt{K_b*c}\\
+        =\sqrt{\frac{K_w}{K_a}*0.05} = 5.3*10^{-6} mol/L\\
+        pH_{ep} = 8.72\\
+        E_t = \frac{10^{\Delta pH}-10^{-\Delta pH}}{\sqrt{c*K_t}}\\
+        =\frac{10^{-0.72} - 10^{0.72}}{\sqrt{0.05*10^{9.26}}} = -0.05\%\\
+    \end{multlined}
+\end{equation}
+20.\begin{equation}
+    \begin{multlined}
+        E_t = \frac{10^{\Delta pH} - 10^{-\Delta pH}}{\sqrt{\frac{K_{a1}}{K_{a2}}}} = 0.82\%\\
+    \end{multlined}
+\end{equation}
+21.\begin{equation}
+    \begin{multlined}
+        C_9H_8O_4 \sim 2NaOH\\
+        2NaOH \sim H_2SO_4\\
+        P = \frac{\frac{1}{2}*\left(c_{NaOH}*V_{NaOH} - 2*c_{H_2SO_4}*V_{H_2SO_4}\right)*M}{m_sample} = 92.8\%\\
+    \end{multlined}
+\end{equation}
+22.\begin{equation}
+    \begin{multlined}
+        K_{a,NH_2OH\cdotHCl} = 10^{-9.24}=K_{a1}\\
+        K_{a,NH_4Cl} = 10^{-5.94} = K_{a2}\\
+        \left[H^+\right] = \sqrt{K_{a1}*K_{a2}} = 2.57*10^{-8} mol/L\\
+        pH = 7.59\\
+        \delta = \frac{K_{a1}}{K_{a1}+\left[H^+\right]} = 2.2\%\\
+    \end{multlined}
+\end{equation}
+23.\begin{equation}
+    \begin{multlined}
+        pH = 5.0 = pK_a\\
+        pOH = 5.0 = p\left{\sqrt{\frac{k_w}{K_a}*c_A}\right}\\
+        c_A = 0.1 mol/L\\
+        c_A * \left(V_{HA} + \frac{n_A}{c_{NaOH}}\right) = n_A\\
+        n_A = 0.01 mol/L\\
+        P = \frac{n_A * M_A}{m_{sample}} = 82.0\%\\
+    \end{multlined}
+\end{equation}
+24. \begin{equation}
+    \begin{multlined}
+        n_{KCl} + n_{NaCl} = c_{HCl} * V_{HCl}\\
+        M_{KCl} * n_{KCl} + M_{NaCl} * n_{NaCl} = 0.18\\
+        \delta = \frac{M_{KCl} * n_{KCl}}{0.18} = 48.0\%\\
+    \end{multlined}
+\end{equation}
+25.\begin{equation}
+    \begin{multlined}
+        \left(NH_4\right)_3PMo_{12}O_{40} \sigma 25 NaOH\\
+        P_{P} = \frac{\left(c_{NaOH}*V_{NaOH} - c_{HNO_3}*V_{HNO_3}\right)/25*M_P}{m_sample} = 0.62\%\\
+        P_{P_2O_5} = 1.44\%\\
+    \end{multlined}
+\end{equation}
+26.\begin{equation}
+    \begin{multlined}
+        P_{protein} = \frac{5.7*M_{N}\left(c_{HCl}*V_{HCl} - c_{NaOH}*V_{NaOH}\right)}{m_{sample}} = 2.93\%\\
+    \end{multlined}
+\end{equation}
+27.\begin{equation}
+    \begin{multlined}
+        I = \frac{1}{2}\Sigma C_iZ_i^2 = 0.1\\
+        \gamma In^- = 0.6948\\
+        pH = pKa + lg \gamma In^- = 3.24\\
+    \end{multlined}
+\end{equation}
+28.\begin{equation}
+    \begin{multlined}
+        c_{C_2H_5ONa} = \frac{c_{HA}*V_{HA}}{V_{C_2H_5ONa}} = 0.150 mol/L\\
+    \end{multlined}
+\end{equation}
+29.\begin{equation}
+    \begin{multlined}
+        HgO+4KI+H_2O=K_2HgI_4+2KOH\\
+        HgO \sim 2KOH\\
+        P_{HgO} = \frac{M_{HgO}*(c_{HCl}*V_{HCl} / 2)}{m_sample} = 85.7\%\\
+    \end{multlined}
+\end{equation}
+30.\begin{equation}
+    \begin{multlined}
+        c_{HCHO} = \frac{c_{NaOH}*V_{NaOH}}{V_{HCHO}} = 0.313 mol/L\\
+    \end{multlined}
+\end{equation}
+\end{document}

@@ -1,0 +1,382 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{CJK}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{Analytical chemistry (5th Edition)}
+\author{LuMg}
+\date{February 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter 6}
+1. calculate $\beta$ of each:\\
+\begin{equation}
+    \begin{multlined}
+    \beta = 1.59*10^{14}\\
+    \beta = 2.19*10^{16}\\
+    \beta = 9.87*10^{19}\\
+    \beta = 2.82*10^{16}\\
+    \beta = 10^{3.2}\\
+    \beta = 10^{18.80}\\
+    \beta = 2.51*10^{15}\\
+    \end{multlined}
+\end{equation}
+2. There are three kinds:\\
+\begin{equation}
+    \begin{multlined}
+        \alpha Cu\left(C_2O_4\right) = 1 + \left[C_2O_4^{2-}\right] * \beta_{1, CuC_2O_4^{2-}} + \left[C_2O_4^{2-}\right]^2 * \beta_{2, Cu\left(C_2O_4^{2-}\right)_2} = 10^{7.9}\\
+        \alpha Cu\left(OH\right) = 1 + \left[OH^-\right]*\beta_{1, Cu\left(OH\right)} = 10^{1.26}\\
+        \alpha Cu\left(NH_3\right) = 1 + \left[NH_3\right]*\beta_{1, Cu\left(NH_3\right)} + \left[NH_3\right]^2*\beta_{2, Cu\left(NH_3\right)_2} + \cdots + \left[NH_3\right]^5*\beta_{1, Cu\left(NH_3\right)_5} = 10^{9.36}\\
+        \alpha_{total} = \alpha Cu\left(C_2O_4\right) + \alpha Cu\left(OH\right) + \alpha Cu\left(NH_3\right) - 2 = 10^{9.36}\\
+    \end{multlined}
+\end{equation}
+3.\begin{equation}
+    \begin{multlined}
+        \alpha Mg = \alpha Mg\left(OH^-\right) = 1 + \left[OH^-\right] * \beta_{1, Mg\left(OH^-\right)} = 1.04\\
+        \alpha In = \alpha In\left(H^+\right) = 1 + \left[OH^-\right] * K_{1, In} + \left[OH^-\right]^2 * K_{2, In} * K_{1, In} = 10^{1.6}\\
+        lg K^{'}_{MgIn} = lg K_{MgIn} - lg\alpha In - lg \alpha Mg = 7.0 - 0.017 - 1.6 = 5.4\\
+    \end{multlined}
+\end{equation}
+4.\begin{itemize}
+    \item in the first case:\\
+\begin{equation}
+    \begin{multlined}
+        \left[NH_3\right] = 0.01 mol/L\\
+        \left[OH^-\right] = 10^{-5} mol/L\\
+        \delta_{M} = \frac{1}{1 + \beta_{1, NH_3}*\left[NH_3\right] + \beta_{2, NH_3}*\left[NH_3\right]^2 + \beta_{3, NH_3}*\left[NH_3\right]^3 + \beta_{4, NH_3}*\left[NH_3\right]^4} = 0.82\%\\
+        \delta_{M\left(NH_3\right)} = \frac{\beta_{1, NH_3}*\left[NH_3\right]}{1 + \beta_{1, NH_3}*\left[NH_3\right] + \beta_{2, NH_3}*\left[NH_3\right]^2 + \beta_{3, NH_3}*\left[NH_3\right]^3 + \beta_{4, NH_3}*\left[NH_3\right]^4} = 0.82\%\\
+        \delta_{M\left(NH_3\right)_2} = \frac{\beta_{2, NH_3}*\left[NH_3\right]^2}{1 + \beta_{1, NH_3}*\left[NH_3\right] + \beta_{2, NH_3}*\left[NH_3\right]^2 + \beta_{3, NH_3}*\left[NH_3\right]^3 + \beta_{4, NH_3}*\left[NH_3\right]^4} = 8.20\%\\
+        \delta_{M\left(NH_3\right)_3} = \frac{\beta_{3, NH_3}*\left[NH_3\right]^3}{1 + \beta_{1, NH_3}*\left[NH_3\right] + \beta_{2, NH_3}*\left[NH_3\right]^2 + \beta_{3, NH_3}*\left[NH_3\right]^3 + \beta_{4, NH_3}*\left[NH_3\right]^4} = 8.20\%\\
+        \delta_{M\left(NH_3\right)_4} = \frac{\beta_{4, NH_3}*\left[NH_3\right]^4}{1 + \beta_{1, NH_3}*\left[NH_3\right] + \beta_{2, NH_3}*\left[NH_3\right]^2 + \beta_{3, NH_3}*\left[NH_3\right]^3 + \beta_{4, NH_3}*\left[NH_3\right]^4} = 81.97\%\\
+        \delta_{M} = \frac{1}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 82.64\%\\
+        \delta_{M\left(OH^-\right)} = \frac{\beta_{1, OH^-}*\left[OH^-\right]}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 8.26\%\\
+        \delta_{M\left(OH^-\right)_2} = \frac{\beta_{2, OH^-}*\left[OH^-\right]^2}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 0.82\%\\
+        \delta_{M\left(OH^-\right)_3} = \frac{\beta_{3, OH^-}*\left[OH^-\right]^3}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 8.26\%\\
+        \delta_{M\left(OH^-\right)_4} = \frac{\beta_{4, OH^-}*\left[OH^-\right]^4}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 0\%\\
+    \end{multlined}
+\end{equation}
+The majority is $M(NH_3)_4$\\
+Given $C_M = 0.1 mol/L$\\
+$[M(NH_3)4] = 0.082 mol/L$\\
+\item
+\begin{equation}
+    \begin{multlined}
+        \left[OH^-\right] = 0.1 mol/L\\
+        \left[NH_3\right] = 0.01 mol/L\\
+        \delta_{M} = \frac{1}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 0\%\\
+        \delta_{M\left(OH^-\right)} = \frac{\beta_{1, OH^-}*\left[OH^-\right]}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 0\%\\
+        \delta_{M\left(OH^-\right)_2} = \frac{\beta_{2, OH^-}*\left[OH^-\right]^2}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 0\%\\
+        \delta_{M\left(OH^-\right)_3} = \frac{\beta_{3, OH^-}*\left[OH^-\right]^3}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 50.00\%\\
+        \delta_{M\left(OH^-\right)_4} = \frac{\beta_{4, OH^-}*\left[OH^-\right]^4}{1 + \beta_{1, OH^-}*\left[OH^-\right] + \beta_{2, OH^-}*\left[OH^-\right]^2 + \beta_{3, OH^-}*\left[OH^-\right]^3 + \beta_{4, OH^-}*\left[OH^-\right]^4} = 50.00\%\\
+    \end{multlined}
+\end{equation}
+So the majority is $M(OH)_4$\\
+Given $C_M = 0.1 mol/L$\\
+$[M(OH)_4] = 0.05 mol/L$\\
+\end{itemize}
+5.\begin{equation}
+    \begin{multlined}
+        Given:\\
+        c_{Ag} = 0.1 mol/L\\
+        [L] = 0.01 mol/L\\
+        [AgL] = c_{Ag} * \frac{\beta_1*[L]}{1 + \beta_1*[L] + \beta_2*[L]^2}\\
+        =9.09*10^{-3} mol/L\\
+        [AgL_2] = c_{Ag} * \frac{\beta_2*[L]^2}{1 + \beta_1*[L] + \beta_2*[L]^2}\\
+        =0.0909 mol/L\\
+        c_L = [L] + [AgL] + 2*[AgL2]\\
+        = 0.01 + 9.09 * 10^{-3} + 0.0909 * 2 = 0.2 mol/L\\
+        \delta_{AgL} = \frac{\beta_1*[L]}{1 + \beta_1*[L] + \beta_2*[L]^2} = 9.09\%\\
+    \end{multlined}
+\end{equation}
+6.\begin{equation}
+    \begin{multlined}
+        [Cd^{2+}] = 0.01 mol/L\\
+        [Zn^{2+}] = 0.01 mol/L\\
+        [Y^{4-}] = 0.01 mol/L\\
+        [Tart] = 0.1 mol/L\\
+        \alpha_{Cd(Tart)} = 1 + \beta_{CdTart}*[Tart] = 10^{1.8}\\
+        \alpha_{Zn(Tart)} = 1 + \beta_{1, ZnTart}*[Tart] + \beta_{2, ZnTart}*[Tart]^2 = 10^{6.32}\\
+        [Zn^{2+}] = \frac{1}{\alpha_{ZnTart}}*c_{Zn} = 10^{-8.32}mol/L\\
+        [Cd^{2+}] = \frac{1}{\alpha_{CdTart}}*c_{Cd} = 10^{-3.8}mol/L\\
+        \alpha_{Y(Zn)} = 1 + K_{ZnY}*[Zn^{2+}] = 10^{8.18}\\
+        \alpha_{Y(Cd)} = 1 + K_{cdY}*[Cd^{2+}] = 10^{12.66}\\
+        So:\\
+        lgK^{,}CdY = lgK_{CdY} - lg\alpha_{CdTart} - lg(\alpha_{Y(Zn)}+\alpha_{Y(H)} - 1)\\
+        = 6.48\\
+        lgK^{,}ZnY = lgK_{ZnY} - lg \alpha_{ZnTart} - lg(\alpha_{Y(Cd)}+\alpha_{Y(H)} - 1)\\
+        = -2.48\\
+    \end{multlined}
+\end{equation}
+8. Cd with $I^{-}$:\\
+\begin{equation}
+    \begin{multlined}
+        lg\beta_1 = 2.10\\
+        lg\beta_2 = 3.43\\
+        lg\beta_3 = 4.49\\
+        lg\beta_4 = 5.41\\
+        \alpha_{Cd(I)} = 1 + \beta_1*[I^-] + \beta_2*[I^-]^2 + \beta_3 * [I^-]^3 + \beta_4*[I^-]^4 = 10^{5.46}\\
+        [Cd^{2+}] = 0.005 mol/L\\
+        [Cd^{2+}] = \frac{1}{\alpha_{Cd(I)}}*c_{Cd} = 10^{-7.76}\\
+        \alpha_{Y(Cd)} = 1 + K_{CdY}*[Cd^{2+}] = 10^{8.7}\\
+        lgK^{,}_{ZnY} = lgK_{ZnY} - lg(\alpha_{Y(Cd)} + \alpha_{Y(H)} - 1)\\
+        =10^{7.8}\\
+        p_{Zn}_{sp} = \frac{1}{2}*(lgK^{,}_{ZnY} + pC_{Zn}_{sp})\\
+        =\frac{1}{2}*(7.8+ p(0.005))\\
+        =5.05\\
+        p_{Zn}_{ep} = lg K^{,}_{ZnIn} = 4.8\\
+        E_t = \frac{10^{\delta_{pM}}-10^{-\delta_{pM}}}{\sqrt{K^{,}_{ZnY}*C^{sp}_{Zn}}}\\
+        =\frac{10^{-0.25} - 10^{0.25}}{\sqrt{10^{7.8}*0.005}}\\
+        = -0.22\%\\
+    \end{multlined}
+\end{equation}
+9.$(a)$\\
+\begin{equation}
+    \begin{multlined}
+        0.2\% = \frac{10^{\Delta pM} - 10^{-\Delta pM}}{\sqrt{K^{,}_{BiY}*c^{sp}_{Bi}}}\\
+        Given:\\
+        \Delta pM = 0.38\\
+        K^{,}_{BiY}*c^{sp}_{Bi} \geq 9.8*10^5\\
+        c^{sp}_{Bi} = 0.01 mol/L\\
+        lg K^{,}_{BiY} \geq 7.99\\
+        lg K_{BiY} - lg\alpha_{Y(H)} \geq 7.99
+        Then:\\
+        lg K_{BiY} = 27.94\\
+        lg\alpha_{Y(H)} \leq 19.95\\
+        pH = 0.64\\
+    \end{multlined}
+\end{equation}
+$(b)$\\
+\begin{equation}
+    \begin{multlined}
+        Given:\\
+        \Delta pM = 1.0\\
+        K^{,}_{BiY}*c^{sp}_{Bi} \geq 2.45*10^7\\
+        c^{sp}_{Bi} = 0.01 mol/L\\
+        lg K^{,}_{BiY} \geq 9.39\\
+        lg K_{BiY} - lg\alpha_{Y(H)} \geq 9.39
+        Then:\\
+        lg K_{BiY} = 27.94\\
+        lg\alpha_{Y(H)} \leq 18.55\\
+        pH = 0.90\\
+    \end{multlined}
+\end{equation}
+10.\begin{equation}
+    \begin{multlined}
+        pH = 3.5\\
+        lg \alpha_{Y(H)} = 9.48\\
+        lg \alpha_{Al(OH)} = 1\\
+        \beta^{,} = lg K_{AlY} - lg \alpha_{Y(H)} = 6.82\\
+    \end{multlined}
+\end{equation}
+11. 
+\begin{itemize}
+    \item 
+$Hg^{2+}$ with $I^-$:\\
+\begin{equation}
+    \begin{multlined}
+        lg\beta_1 = 12.87\\
+        lg\beta_2 = 23.82\\
+        lg\beta_3 = 27.60\\
+        lg\beta_4 = 29.83\\
+        [I^-] = 0.01 mol/L\\
+        [Cd^{2+}] = 0.01 mol/L\\
+        [Hg^{2+}] = 0.01 mol/L\\
+        [Y] = 0.01 mol/L\\
+        \alpha_{Hg(I)} = 1 + \beta_1*[I^-] + \beta_2*[I^-]^2 + \beta_3*[I^-]^3 + \beta_4*[I^-]^4\\
+        = 1.08*10^{22}\\
+        [Hg^{2+}] = \frac{1}{\alpha_{Hg(I)}} * c_{Hg} = 9.26*10^{-25} mol/L\\
+        \alpha_{Y(Hg)} = 1 + K_{HgY}*[Hg^{2+}] = 1\\
+        lg \alpha{Y(H)} = 4.65\\
+        lg\beta_{1,CdI} = 2.10\\
+        lg\beta_{2,CdI} = 3.43\\
+        lg\beta_{3,CdI} = 4.49\\
+        lg\beta_{4,CdI} = 5.41\\
+        \alpha_{Cd(I)} = 1 + \beta_{1,CdI}*[I^-] + \beta_{2,CdI}*[I^-]^2 + \beta_{3,CdI} * [I^-]^3 + \beta_{4,CdI}*[I^-]^4 = 10^{0.41}\\
+        lgK^{,}_{CdY} = lgK_{CdY} - lg(\alpha_{Y(H)}) - lg \alpha_{Cd(I)}= 11.40\\ 
+    \end{multlined}
+\end{equation}
+    \item
+    $[Hg^{2+}]$ is too low:\\
+    \begin{equation}
+        [Hg^{2+}] = \frac{1}{\alpha_{Hg(I)}} * c_{Hg} = 9.26*10^{-25} mol/L\\
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            p_{Cd}_{sp} = \frac{1}{2}*(lg K^{,}_{CdY} + p_{C_{Cd}}^{sp})\\
+            =\frac{1}{2}*(11.40 + p(0.01)) = 6.7\\
+            p_{Cd}_{ep} = lgK^{,}_{CdIn} = 5.5\\
+            \Delta p_{Cd} = -1.2\\
+            E_t = \frac{10^{\Delta p_{Cd}}-10^{-\Delta p_{Cd}}}{\sqrt{K^,_{CdY}}*c^{sp}_{Cd}}\\
+            = -0.03\%\\
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            [I^-] = 0.5 mol/L\\
+            \alpha_{Cd(I)} = 1 + \beta_{1,CdI}*[I^-] + \beta_{2,CdI}*[I^-]^2 + \beta_{3,CdI} * [I^-]^3 + \beta_{4,CdI}*[I^-]^4 = 10^{4.3}\\
+        lgK^{,}_{CdY} = lgK_{CdY} - lg(\alpha_{Y(H)}) - lg \alpha_{Cd(I)}= 7.51\\
+        p_{Cd}_{sp} = \frac{1}{2}*(lg K^{,}_{CdY} + p_{C_{Cd}}^{sp})\\
+            =\frac{1}{2}*(7.51 + p(0.01)) = 4.76\\
+            p_{Cd}_{ep} = lgK^{,}_{CdIn} = 5.5\\
+            \Delta p_{Cd} = 0.74\\
+            E_t = \frac{10^{\Delta p_{Cd}}-10^{-\Delta p_{Cd}}}{\sqrt{K^,_{CdY}}*c^{sp}_{Cd}}\\
+            = 0.93\%\\
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+12.\begin{itemize}
+    \item 
+    \begin{equation}
+        \begin{multlined}
+            [Ac^-] = \frac{K_a}{K_a + [H^+]}* c = 0.2 mol/L\\
+            \alpha_{Pb(Ac)} = 1 + \beta_1*[Ac^-] + \beta_2*[Ac^-]^2 = 10^{2.43}\\
+            lg\alpha_{Y(H)} = 6.45\\
+            lgK^,_{PbY} = lgK_{PbY} - lg\alpha_{Pb(Ac)} - lg\alpha_{Y(H)}\\
+            =9.16\\
+            p_{Pb}^{sp} = \frac{1}{2}*(lgK^,_{PbY} + p(c_{Pb}^{sp})) = 6.08\\
+            p_{Pb}^{ep} = lgK^,_{PbIn} = lgK_{PbIn} - lg \alpha_{Pb(Ac)} = 7.0 - 2.43 = 4.57\\
+            \Delta p_{Pb} = -1.51\\
+            E_t = \frac{10^{\Delta p_{Pb}}-10^{-\Delta p_{Pb}}}{\sqrt{K^,_{PbY}}*c^{sp}_{Pb}}\\
+            = -0.27\%\\
+        \end{multlined}
+    \end{equation}
+    \item
+    \begin{equation}
+        \begin{multlined}
+            lg K^,_{PbY} = lgK_{PbY} - lg\alpha_{Y(H)}\\
+            = 11.59\\
+            p_{Pb}^{sp} = \frac{1}{2}*(lgK^,_{PbY} + p(c_{Pb}^{sp})) = 7.30\\
+            p_{Pb}^{ep} = lgK^,_{PbIn} = lgK_{PbIn} = 7.0\\
+            \Delta p_{Pb} = -0.30\\
+            E_t = \frac{10^{\Delta p_{Pb}}-10^{-\Delta p_{Pb}}}{\sqrt{K^,_{PbY}}*c^{sp}_{Pb}}\\
+            = -0.008\%\\
+        \end{multlined}
+    \end{equation}
+\end{itemize}
+13.\begin{equation}
+    \begin{multlined}
+        lg\beta_1 = 4.31\\
+        lg\beta_2 = 7.98\\
+        lg\beta_3 = 11.02\\
+        lg\beta_4 = 13.32\\
+        lg\beta_5 = 12.86\\
+        \alpha_{Cu(NH_3)} = 1 + \beta_1*[NH_3] + \beta_2*[NH_3]^2 + \beta_3*[NH_3]^3 + \beta_4*[NH_3]^4 + \beta_5*[NH_3]^5\\
+        =2.27*10^9\\
+        [Cu^{2+}]=\frac{1}{\alpha_{Cu(NH_3)}}*c_{Cu} = 4.4*10^{-12} mol/L\\
+        lgK^,_{CuY} =  lgK_{CuY} - lg\alpha_{Cu(NH_3)} - lg\alpha_{Y(H)} = 8.99\\
+        p_{Cu}^{sp} = \frac{1}{2}*(lgK^,_{CuY} + c_{Cu}^{sp})\\
+        = \frac{1}{2}*(8.99 + p(0.01)) = 5.50\\
+        p^{,}_{Cu}^{ep} = p_{Cu}^{ep} - lg(\alpha_{Cu(NH_3)}) = 4.44\\
+        \Delta p_{Cu} = p^{,}_{Cu}^{ep} - p_{Cu}^{sp} = -1.06\\
+        E_t = \frac{10^{\Delta p_{Cu}} - 10^{-\Delta p_{Cu}}}{\sqrt{K^,_{CuY} * c_{Cu}^{sp}}} = -0.36\%\\
+    \end{multlined}
+\end{equation}
+15.\begin{equation}
+    \begin{multlined}
+        [Th] = 0.01 mol/L\\
+        [La] = 0.01 mol/L\\
+        K_{sp, Th(OH)_4} = 10^{-44.89}\\
+        pOH = 3.5\\
+        K_{sp, La(OH)_3} = 10^{-18.8}\\
+        pOH = 2.56\\
+    \end{multlined}
+\end{equation}
+As long as keep $pH < 7$ we can ignore $OH^-$\\
+\begin{equation}
+    \begin{multlined}
+        lg\beta_{ThY} = 23.2\\
+        lg\beta_{LaY} = 15.5\\
+        lg (K^,_{ThY}*c_{Th}^{sp})\geq 6
+        lg K^,_{ThY} \geq 8\\
+        lg (\alpha_{Y(H)} + \alpha_{Y(La)} - 1) \leq 15.2\\
+        pH \approx 1.6\\
+    \end{multlined}
+\end{equation}
+16.\begin{equation}
+    \begin{multlined}
+        EDTA: Zn, Al, Ti\\
+        C_2H_8N_2: Zn\\
+        C_7H_6O_6S: Al, Zn\\
+    \end{multlined}
+\end{equation}
+17.\begin{equation}
+    \begin{multlined}
+        \left[F\right] = 0.1\\
+        [CuY] = 0.01 mol/L\\
+        lg [Cu]_{sp} = -lgK^,CuIn = -8.3\\
+        [Y]_{ep} = \frac{[CuY]}{[Cu]K^,_{CuY}} = \frac{0.01}{10^{11.36}*10^{-8.3}} = 10^{-5.06}\\
+        lg K^,_{CuY} = lg K_{CuY} - lg \alpha_{Y(H)} = 18.8 - 7.44 = 11.36\\
+        lg K^,_{FeY} = lg K_{FeY} -  lg \alpha_{Y(H)} = 25.1 - 7.44 = 17.66\\
+        Reaction:\\
+        \frac{[FeF_3]*[Y]}{[FeY]*[F^-]^3}\\
+        = \frac{[FeF_3]}{[Fe]*[F]^3}*\frac{[Fe][Y]}{[FeY]} = \frac{\beta_3}{K^,_{FeY}}\\
+        So:\\
+        \frac{[FeF_3]}{[FeY]} = \frac{\beta_3}{K^,_{FeY}}*\frac{[F]^3}{[Y]}\\
+        = \frac{10^{12.06}}{10^{17.66}}*\frac{10^{-3}}{10^{-5.06}}\\
+        = 0.029\%\\
+    \end{multlined}
+\end{equation}
+18.\begin{equation}
+    \begin{multlined}
+        n_{total} = 50ml*0.03mol/L - 0.03mol/L*3mL = 1.41mmol\\
+        n_{Sn} = 35ml * 0.03mol/L = 1.05mmol\\
+        P_{Sn} = \frac{n_{Sn}* M_{Sn}}{m_{sample}} = 62.32\%\\
+        P_{Pb} = \frac{(n_{total} - n_{Sn})* M_{Pb}}{m_{sample}} = 37.26\%\\
+    \end{multlined}
+\end{equation}
+19.\begin{equation}
+    \begin{multlined}
+        P_{ZrO_2} = \frac{0.01mol/L*10mL*\frac{200mL}{50mL}*M_{ZrO2}}{m_{sample}} = 4.92\%\\
+        P_{Fe_2O_3} = \frac{0.01mol/L*20mL*\frac{200mL}{50mL}*\frac{1}{2}*M_{Fe_2O_3}}{m_{sample}} = 6.40\%\\
+    \end{multlined}
+\end{equation}
+20.\begin{equation}
+    P_{M} = \frac{\frac{50mL}{20mL}*(5mL*0.3mol/L - \frac{20mL+5mL}{10mL}*6mL*0.05mol/L)*194.16g/mol}{0.5g} = 72.81\%\\
+\end{equation}
+21.
+\begin{equation}
+    P_{M} = \frac{2*(25.00mL * 0.03000mol/L - \frac{250mL}{25mL}*(0.01mol/L* 3.6mL)) * 254.2 g/mol}{0.2014 g} = 98.44\%\\
+\end{equation}
+22. When $pH = 1$:\\
+\begin{equation}
+    \begin{multlined}
+        \beta_{Bi^{3+}} = 10^{5.3}\\
+        \beta_{Pb^{2+}} = 10^{2.4}\\
+        Bi^{3+} + Y^{4-} = BiY^-\\
+        P_{Bi} = \frac{0.02479 * 25.67 * 5 * M_{Bi}}{1000 * 2.420} = 27.48\%\\
+    \end{multlined}
+\end{equation}
+When $pH = 5$ for both Pb and Cd:\\
+\begin{equation}
+    \begin{multlined}
+        P_{Cd} = \frac{0.02174 * 6.76 * 5 * M_{Pb}}{1000 * 2.420} = 3.41\%\\
+        P_{Pb} = \frac{(0.02479 * 24.76 - 0.02174 * 6.76) * 5 * M_{Pb}}{1000 * 2.420} = 19.97\%\\
+    \end{multlined}
+\end{equation}
+23.\begin{equation}
+    \begin{multlined}
+        (a) [Pb^{2+}][SO_4^{2-}] = K_{sp} = 1.6 * 10^{-8}\\
+        \beta = \frac{[PbY]}{[Pb][Y]} = 1.1*10^{18}\\
+        \frac{[PbY^{2-}]}{[Y^{4-}]} = 1.4*10^4\\
+    \end{multlined}
+\end{equation}
+So if $[Y^{4-}]$ is large enough, the equation can happen\\
+$(b)$ Pb will be lower.\\
+\begin{equation}
+    \begin{multlined}
+        (c) c_{SO_4^{2-}} = \frac{0.05000mol/L*50.00mL - 12.24mL* 0.1000mol/L}{25mL} = 0.051 mol/L\\
+    \end{multlined}
+\end{equation}
+24. Ni remains:\\
+\begin{equation}
+    \begin{multlined}
+        P_{Ni} = \frac{0.05831 mol/L * 26.14 mL * 5 * M_{Ni}}{1000ml/L * m_{sample}}\\
+        = 62.33\%\\
+    \end{multlined}
+\end{equation}
+\end{document}
